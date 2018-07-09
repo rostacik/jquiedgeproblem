@@ -1,4 +1,5 @@
 function globalErrorHandler(message, filename, lineno, colno, error) {
+    debugger;
     var errMsg = [];
     errMsg.push(message);
     errMsg.push(" in ");
