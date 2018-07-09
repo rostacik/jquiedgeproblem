@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    window.addEventListener("resize", function () {
+    $(window).on("resize", function () {
         debugger;
         console.log("resize event happened");
     });

@@ -6,7 +6,7 @@ $(document).ready(function () {
             modal: true
         });
 
-        window.top.addEventListener("message", msgReceived, false);
+        $(window.top).on("message", msgReceived);
 
         function msgReceived(event) {
             window.top.removeEventListener("message", msgReceived, false);
